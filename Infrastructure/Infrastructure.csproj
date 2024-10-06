@@ -13,8 +13,4 @@
     <Folder Include="Persistence\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MongoDB.EntityFrameworkCore" Version="8.1.1" />
-  </ItemGroup>
-
 </Project>
