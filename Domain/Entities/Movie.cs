@@ -4,18 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Domain.Entities
 {
     public class Movie
     {
-        private int MovieID { get; set; }
-        private string MovieName { get; set; }
-        private string MovieDescription { get; set; }
-        private int Duritation { get; set; }
-        private float Rating { get; set; }
-        private IList<Genres> Genres { get; set; }
-        private IList<Actor> Stars { get; set; }
+        public ObjectId Id { get; set; }
+        public string MovieName { get; set; }
+        public string MovieDescription { get; set; }
+        public int Duritation { get; set; }
+        public float Rating { get; set; }
+        public IList<Genres> Genres { get; set; }
+        public IList<Actor> Stars { get; set; }
 
         public Movie(string movieName, string movieDescription, int duritation, float rating, IList<Genres> genres, IList<Actor> stars)
         {
