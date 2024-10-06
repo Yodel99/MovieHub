@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{637EFF15-33C0-42C4-84A4-7E33C9932DAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{637EFF15-33C0-42C4-84A4-7E33C9932DAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{24B2DE47-E0F8-4A63-B7B7-C16AE0BC393B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{24B2DE47-E0F8-4A63-B7B7-C16AE0BC393B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9064F437-1E03-4D69-BC44-8F300D292AD5} = {9064F437-1E03-4D69-BC44-8F300D292AD5}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{9064F437-1E03-4D69-BC44-8F300D292AD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{9064F437-1E03-4D69-BC44-8F300D292AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{3B479534-D6AA-40CE-A196-99A99B1C7766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "WebUI\WebUI.csproj", "{3B479534-D6AA-40CE-A196-99A99B1C7766}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
