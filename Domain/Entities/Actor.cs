@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
+using MongoDB.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Entities
 {
     public class Actor
     {
-        private int ActorID { get; set; }
-        private string ActorFirstName { get; set; }
-        private string ActorLastName { get; set; }
+        public ObjectId Id { get; set; }
+        public string ActorFirstName { get; set; }
+        public string ActorLastName { get; set; }
         
 
         public Actor(string actorFirstName, string actorLastName) 
