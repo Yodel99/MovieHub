@@ -18,17 +18,17 @@ namespace Domain.Entities
         public string MovieDescription { get; set; }
         public int Duritation { get; set; }
         public float Rating { get; set; }
-        public IList<Genres> Genres { get; set; }
-        public IList<Actor> Stars { get; set; }
+        //public IList<Genres> Genres { get; set; }
+        //public IList<Actor> Stars { get; set; }
 
-        public Movie(string movieName, string movieDescription, int duritation, float rating, IList<Genres> genres, IList<Actor> stars)
+        public Movie(string movieName, string movieDescription, int duritation, float rating)
         {
             MovieName = movieName;
             MovieDescription = movieDescription;
             Duritation = duritation;
             Rating = rating;
-            Genres = genres;
-            Stars = stars;
+            // Genres = genres;
+            // Stars = stars;
         }
     }
 }

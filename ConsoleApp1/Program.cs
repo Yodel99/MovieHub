@@ -12,16 +12,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         { 
-            // TEst test
-            //Använd anslutningssträngen för att skapa MovieHubContext
-            var db = MovieHubContext.Create();
-         
-         Movie movie = new Movie("Offside", "Gäng grabbar som spelar boll", 200, 8);
-         
-         db.Add(movie);
-         
-         db.SaveChanges();
-         
+            // Ladda anslutningssträngen från appsettings.json
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .Build();
+
+            var connectionString = configuration.GetConnectionString("MovieHub");
+
+            // Skapa en instans av MovieHubContext
+            var db = new MovieHubContext(connectionString);
+
+            // Skapa en film och lägg till den i databasen
+            Movie movie = new Movie("Joel spelar fotboll", "Hahahaha", 200, 8);
+        
+            // Lägg till filmen i MongoDB
+            db.Movies.InsertOne(movie);
+
+            Console.WriteLine("Filmen har lagts till i databasen.");
 
         }
     }
