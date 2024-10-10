@@ -47,7 +47,7 @@ app.MapRazorComponents<App>()
 var db = new MovieHubContext(connectionString);
 
 // Skapa en film och lägg till den i databasen
-Movie movie = new Movie("Gänget", "Hahahaha", 200, 8);
+Movie movie = new Movie("Pulp Fiction", "Hahahaha", 200, 8);
         
 // Lägg till filmen i MongoDB
 db.Movies.InsertOne(movie);
