@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UserSecretsId>e0d1cf8b-cd1b-4e1d-84b5-d36dbdaaa01a</UserSecretsId>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,5 +16,10 @@
     <Folder Include="Common\Models\" />
     <Folder Include="Common\Security\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
 
 </Project>
