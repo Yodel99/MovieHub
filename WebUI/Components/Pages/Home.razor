@@ -1,12 +1,26 @@
 ﻿@page "/"
+@layout MovieHub
 
-@using Microsoft.Extensions.Options
-@using WebUI.Controllers
-@inject IOptions<MySettings> MySettings
 
-<PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-<p>Setting1: @MySettings.Value.MovieHub1</p>
 
-Welcome to your new app.
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">MovieHub</h1>
+        </header>
+        <div class="buttons">
+            <a href="#" class="btn">Get Movie Suggestion</a>
+            <a href="#" class="btn">Movie Library</a>
+        </div>
+    </div>
+</body>
+</html>
+
