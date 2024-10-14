@@ -1,0 +1,48 @@
+﻿.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+    color: #e50914;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #e50914, 0 0 20px #e50914, 0 0 30px #e50914;
+    }
+
+    to {
+        text-shadow: 0 0 20px #e50914, 0 0 40px #e50914, 0 0 60px #e50914;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 2px solid #e50914;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+}
+
+    .btn:hover {
+        background-color: #e50914;
+        color: #fff;
+        box-shadow: 0px 0px 20px 5px #e50914;
+    }
