@@ -22,6 +22,7 @@ namespace Domain.Entities
         //public IList<Actor> Stars { get; set; }
 
         public Movie(string movieName, string movieDescription, int duritation, float rating)
+
         {
             MovieName = movieName;
             MovieDescription = movieDescription;
@@ -29,6 +30,7 @@ namespace Domain.Entities
             Rating = rating;
             // Genres = genres;
             // Stars = stars;
+
         }
     }
 }

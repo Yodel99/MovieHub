@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UserSecretsId>e0d1cf8b-cd1b-4e1d-84b5-d36dbdaaa01a</UserSecretsId>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,5 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
+
 
 </Project>
